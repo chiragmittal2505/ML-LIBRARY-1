@@ -56,7 +56,7 @@ class Lin_Reg:
           m=self.X.shape[0]
           r=math.ceil(m/self.batch_size)               # decides the no of mini batches
           
-          for j in range(self.i):
+          for j in range(self.itr):
               v=self.batch_size                        # manages overflowing
               for k in range(r):
                   u=k*self.batch_size
